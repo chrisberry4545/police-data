@@ -1,0 +1,7 @@
+dist
+node_modules
+tasks.txt
+.rpt2_cache/*
+npm-debug*.log
+.DS_Store
+coverage

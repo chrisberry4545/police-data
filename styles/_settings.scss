@@ -1,0 +1,10 @@
+/*
+ * SETTINGS
+ * Config...............Project-level configuration and feature switches.
+ * Core.................inuitcss’ core and setup settings.
+ * Global...............Project-wide variables and settings.
+ */
+
+@import "./styles/settings/settings.config";
+@import "./node_modules/inuitcss/settings/settings.core";
+@import "./styles/settings/settings.global";

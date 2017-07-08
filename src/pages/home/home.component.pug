@@ -1,0 +1,20 @@
+h3.c-home.u-orange.o-color-yellow Component
+
+div(*ngIf="!isLoading")
+    div
+        h3 Categories
+
+        select(
+            [(ngModel)]="selectedCategory",
+            (change)="showCategories(selectedCategory)",
+        )
+            option(
+                *ngFor="let category of categories",
+                [value]="category",
+            ) {{ category }}
+
+    div
+        table
+            tr(*ngFor="let crimeIncident of filteredIncidents")
+                td {{ crimeIncident.category }}
+                td {{ crimeIncident.location?.street?.name }}
